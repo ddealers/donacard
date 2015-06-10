@@ -1,0 +1,174 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+.container {
+	position: absolute;
+  	width: 57%;
+  	height: 60%;
+  	right: 0;
+  	left: 0;
+  	top: 0;
+  	bottom: 0;
+  	margin: auto;
+    perspective: 800px;
+}
+#card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+#card figure {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #E4E4E4;
+    border-radius: 15px;
+}
+.titulo {
+	font-size: 20px;
+  	color: white;
+  	text-align: center;
+  	padding: 5px;
+  	background-color: #76B586;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.flex-container-formulario {
+	width: 100%;
+    height: 200px;         
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-item-datos-formulario{
+    width: 60%;
+    padding: 15px;
+    height: 160px;
+}
+.flex-container-formulario input {
+	width: 100%;
+  	height: 20px;
+  	border-radius: 10px;
+  	padding: 5px;
+  	font-size: 12px;
+  	color: #107e3f;
+  	margin-bottom: 10px;
+  	border: solid 2px #656D73;
+    display: flex;
+    top: 20px;
+}
+.flex-item-foto-perfil {
+    width: 30%;
+}
+.flex-item-foto-perfil img {
+    width: 100%;
+    margin-top: 10px;
+}
+.flex-container-contacto {
+  	-webkit-flex-flow: row wrap;
+  	justify-content: space-around;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  	width: 80%;
+  	left: 0;
+  	right: 0;
+  	margin: auto;
+  	margin-top: 5px;
+  	font-size: 15px;
+  	font-famili: arial;
+    margin-bottom: 10px;
+}
+.flex-item {
+	font-size: 18px;
+	text-decoration: none;
+	color: #107e3f;
+}
+.flex-container-logos {
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+}  
+.flex-item-logo-salud {
+    width: 30%;
+}
+.flex-item-logo-cenar{
+    width: 30%;
+}
+.back {
+    transform: rotateY( 180deg );
+}
+.informacion {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+.selector {
+    width: 20px;
+    bottom: 10px;
+} 
+#organos-donados {
+    width: 65%;
+    height: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    color: #107e3f;
+    margin-bottom: 10px;
+    border: solid 2px #656D73;
+    margin-top: 10px;
+}
+.aviso{
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    width: 58%;
+    margin-top: 10px;
+}
+#options {
+    position: relative;
+    z-index: 100;
+    margin-top : 100px;
+}
+.flip {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 550px;
+    background-image: url(img/siguiente.png);
+}
+#card.flipped {
+  transform: rotateY( 180deg );
+}
+.back{
+   background-image: url(img/)
+}
+
+

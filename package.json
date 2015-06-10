@@ -1,0 +1,11 @@
+{
+	"name": "DonaCard",
+	"version": "1.0.0",
+	"description": "Formulario Donacion",
+	"devDependencies":{
+		"gulp": "latest",
+		"gulp-live-server":"latest",
+		"gulp-stylus":"latest",
+		"gulp-util":"latest"
+	}
+}
