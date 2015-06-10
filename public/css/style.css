@@ -304,4 +304,26 @@ body {
 #card.flipped {
   transform: rotateY( 180deg );
 }
-
+button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #76B586;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button:hover{
+    background: #518C81;
+}
+.rojo{
+    color: #E10020;
+}
+.error-p {
+    color: #E10020;
+    display: none;
+    margin-left: 20px;
+}
+button[disabled], html input[disabled] {
+  cursor: default;
+}

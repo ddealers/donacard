@@ -15,10 +15,12 @@
 				<p class="titulo">DONACION DE ORGANOS Y TEJIDOS</p>
 				<div class="flex-container-formulario">
 					<div class="flex-item-datos-formulario">
-						<input type="txt" name="name" id="name-text" placeholder="Nombre y Firma">
-						<input type="text" name="fecha" id="fecha-text" placeholder="Fecha">
-						<input type="txt" name="testigo-1" id="testigo1-text" placeholder="Testigo Nombre y Firma">
-						<input type="txt" name="testigo-2" id="testigo2-text" placeholder="Testigo Nombre y Firma">
+						<form method="POST" id="form">
+							<input type="txt" name="name" id="name-text" placeholder="Nombre y Firma">
+							<input type="text" name="fecha" id="fecha-text" placeholder="Fecha">
+							<input type="txt" name="testigo-1" id="testigo1-text" placeholder="Testigo Nombre y Firma">
+							<input type="txt" name="testigo-2" id="testigo2-text" placeholder="Testigo Nombre y Firma">
+						</form>
 					</div>	
 					<div class="flex-item-foto-perfil">
 						<a href="#"><img src="img/foto-perfil.png"></a>
@@ -40,6 +42,7 @@
 					 	A) Cualquiera de mis Órganos y/o Tejidos. <input class="selector" type="radio" name="cualquier-organo"><br>
 					   	B) Solo mis Órganos y Tejidos siguientes. <input class="selector" type="radio" name="cualquier-organo">
 					</p> 
+					<p class="error-p">Campos con información requerida*</p>
 					<input type="txt" name="organo-donado" id="organos-donados" placeholder="Órganos y Tejidos que deseo donar"><br>
 					<p class="aviso">  
 					   Para fines de trasplantes después de mi muerte, siempre y<br>
@@ -50,6 +53,7 @@
 					   que una más de nuestras historias como familia y la de muchas<br>
 					   otras continúen.
 					</p>
+					<button>PUBLICAR</button>
 				</div>
 			</figure>
 		</div>
