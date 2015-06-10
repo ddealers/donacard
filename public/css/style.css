@@ -5,13 +5,12 @@
 body {
 	width: 100%;
 	height: 100%;
-	text-decoration: none;
     background-color: #518C81;
 }
 .container {
 	position: absolute;
-  	width: 57%;
-  	height: 60%;
+  	width: 65%;
+  	height: 62%;
   	right: 0;
   	left: 0;
   	top: 0;
@@ -19,6 +18,14 @@ body {
   	margin: auto;
     perspective: 800px;
 }
+@media screen and (max-width: 1024px){
+    .container {
+        width: 80%;
+        bottom: 120px;
+        height: 70%;
+    }
+}
+
 #card {
     width: 100%;
     height: 100%;
@@ -35,6 +42,16 @@ body {
     background-color: #E4E4E4;
     border-radius: 15px;
     -webkit-filter: drop-shadow(8px 8px 20px #1E1F1A);
+}
+@media screen and (max-width: 1024px){
+    #card figure {
+        height: 80%;
+    }    
+}
+@media screen and (max-width: 768px){
+    #card figure {
+        height: 80%;
+    }    
 }
 .titulo {
 	font-size: 20px;
@@ -54,17 +71,37 @@ body {
     display: -webkit-flex;
     display: flex;
 }
-.flex-item-datos-formulario{
+@media screen and (max-width: 768px){
+    .flex-container-formulario {
+        -webkit-flex-flow: row-reverse wrap;
+        margin-top: 50px;
+    }
+}
+.flex-item-datos-formulario {
     width: 60%;
     padding: 15px;
     height: 160px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1024px){
+    .flex-item-datos-formulario {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .flex-item-datos-formulario {
+        width: 80%;
+        padding: 15px;
+        height: 160px;
+        margin-top: 150px;
+    }
 }
 .flex-container-formulario input {
 	width: 100%;
   	height: 20px;
   	border-radius: 10px;
-  	padding: 5px;
-  	font-size: 12px;
+  	padding: 7px;
+  	font-size: 15px;
   	color: #107e3f;
   	margin-bottom: 10px;
   	border: solid 2px #656D73;
@@ -74,8 +111,20 @@ body {
 .flex-item-foto-perfil {
     width: 30%;
 }
+@media screen and (max-width: 768px){
+    .flex-item-foto-perfil{
+        width: 40%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 30px;
+        bottom: 0;
+        margin: auto;
+        display: block;
+    }
+}
 .flex-item-foto-perfil img {
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
 }
 .flex-container-contacto {
@@ -94,9 +143,16 @@ body {
     margin-bottom: 10px;
 }
 .flex-item {
-	font-size: 18px;
+	font-size: 20px;
 	text-decoration: none;
 	color: #107e3f;
+}
+@media screen and (max-width: 768px){
+    .flex-item {
+        line-height: 20px;
+        margin-top: 10px;
+        font-size: 19px;
+    }
 }
 .flex-container-logos {
     -webkit-flex-flow: row wrap;
@@ -111,8 +167,13 @@ body {
     margin-top: 20px;
 }  
 .flex-item-logo-salud {
-    width: 30%;
+    width: 27%;
 }
+/*@media screen and (max-width: 768px){
+    .flex-item-logo-salud {
+        width: 30%;
+    }
+}*/
 .flex-item-logo-cenar{
     width: 30%;
 }
@@ -129,6 +190,11 @@ body {
     font-size: 16px;
     line-height: 1.4;
     margin-top: 30px;
+}
+@media screen and (max-width: 768px){
+    .informacion {
+        margin-top: 27%;
+    }
 }
 .selector {
     width: 20px;
@@ -155,7 +221,7 @@ body {
 }
 .flex-container-botones {
     position: absolute; 
-    width: 80%;
+    width: 57%;
     height: 155px;
     top: 500px;
     padding: 5px;
@@ -166,10 +232,15 @@ body {
     right: 0;
     margin: auto;
 }
+@media screen and (max-width: 768px){
+    .flex-container-botones {
+        top: 720px;
+    }
+}
 .flex-item-icono {
     padding: 5px;
-    width: 30%;
-    height: 120px;
+    width: 45%;
+    height: 100px;
     margin-top: 10px;
 }
 .redes-sociales {
@@ -181,26 +252,38 @@ body {
     justify-content: space-around;
 }
 .compartir-redes {
-    width: 25%;
-    height: 54%;
+    width: 20%;
+    height: 58%;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
+    display: block;
+    padding-top: 10px;
 }
-.redes-sociales img{
-    width: 70%;
+.redes-sociales img {
+    width: 78%;
     display: block;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     margin: auto;
+    -webkit-filter: grayscale(1);
+}
+@media screen and (max-width: 1024px){
+    .redes-sociales img {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 768px){
+    .redes-sociales img {
+        width: 100%;
+    }
 }
 .redes-sociales img:hover {
-    -webkit-filter: drop-shadow(2px 2px 4px black);
-    width: 85%;
+    -webkit-filter: none;
 }
 .flip {
     width: 100px;
@@ -213,6 +296,10 @@ body {
     margin: auto;
     bottom: 0;
     display: block;
+}
+.flip:hover{
+    width: 110px;
+    height: 110px;
 }
 #card.flipped {
   transform: rotateY( 180deg );
