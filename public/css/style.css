@@ -9,12 +9,11 @@ body {
 }
 .container {
 	position: absolute;
-  	width: 65%;
-  	height: 62%;
+  	width: 62%;
+  	height: 59%;
   	right: 0;
   	left: 0;
-  	top: 0;
-  	bottom: 180px;
+  	top: 25px;
   	margin: auto;
     perspective: 800px;
 }
@@ -50,7 +49,7 @@ body {
 }
 @media screen and (max-width: 768px){
     #card figure {
-        height: 80%;
+        height: 86%;
     }    
 }
 .titulo {
@@ -67,14 +66,12 @@ body {
     height: 200px;         
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
-    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
 }
 @media screen and (max-width: 768px){
     .flex-container-formulario {
-        -webkit-flex-flow: row-reverse wrap;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }
 .flex-item-datos-formulario {
@@ -83,19 +80,19 @@ body {
     height: 160px;
     margin-bottom: 20px;
 }
-@media screen and (max-width: 1024px){
-    .flex-item-datos-formulario {
-        margin-top: 15px;
+    @media screen and (max-width: 1024px){
+        .flex-item-datos-formulario {
+          margin-top: 15px;
+        }
+    }   
+    @media screen and (max-width: 768px){
+        .flex-item-datos-formulario {
+            width: 80%;
+            padding: 15px;
+            height: 160px;
+            margin-top: 150px;
+        }
     }
-}
-@media screen and (max-width: 768px){
-    .flex-item-datos-formulario {
-        width: 80%;
-        padding: 15px;
-        height: 160px;
-        margin-top: 150px;
-    }
-}
 .flex-container-formulario input {
 	width: 100%;
   	height: 20px;
@@ -109,11 +106,12 @@ body {
     top: 20px;
 }
 .flex-item-foto-perfil {
-    width: 30%;
+    width: 27%;
+    display: block;
 }
 @media screen and (max-width: 768px){
     .flex-item-foto-perfil{
-        width: 40%;
+        width: 30%;
         position: absolute;
         left: 0;
         right: 0;
@@ -124,7 +122,7 @@ body {
     }
 }
 .flex-item-foto-perfil img {
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
 }
 .flex-container-contacto {
@@ -142,10 +140,20 @@ body {
   	font-famili: arial;
     margin-bottom: 10px;
 }
+@media screen and (max-width: 768px){
+    .flex-container-contacto {
+            width: 50%;
+            padding: 10px;
+    }
+}
 .flex-item {
 	font-size: 20px;
 	text-decoration: none;
 	color: #107e3f;
+}
+.liga:hover{
+    font-size: 22px;
+    color: #EF3331;
 }
 @media screen and (max-width: 768px){
     .flex-item {
@@ -169,17 +177,18 @@ body {
 .flex-item-logo-salud {
     width: 27%;
 }
-/*@media screen and (max-width: 768px){
+@media screen and (max-width: 768px); {
     .flex-item-logo-salud {
-        width: 30%;
+        width: 31%;
     }
-}*/
+}
 .flex-item-logo-cenar{
     width: 30%;
 }
 .back {
     transform: rotateY( 180deg );
 }
+
 .informacion {
     right: 0;
     left: 0;
@@ -189,11 +198,16 @@ body {
     text-align: center;
     font-size: 16px;
     line-height: 1.4;
-    margin-top: 30px;
+    margin-top: 2%;
+}
+@media screen and (max-width: 1024px){
+    .informacion {
+        margin-top: 4%;
+    }
 }
 @media screen and (max-width: 768px){
     .informacion {
-        margin-top: 27%;
+        margin-top: 20%;
     }
 }
 .selector {
@@ -223,7 +237,7 @@ body {
     position: absolute; 
     width: 57%;
     height: 155px;
-    top: 500px;
+    top: 440px;
     padding: 5px;
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -232,35 +246,28 @@ body {
     right: 0;
     margin: auto;
 }
+@media screen and (max-width: 1024px){
+    .flex-container-botones {
+        top: 520px;
+    }
+}
 @media screen and (max-width: 768px){
     .flex-container-botones {
-        top: 720px;
+        top: 760px;
     }
 }
 .flex-item-icono {
-    padding: 5px;
-    width: 45%;
+    width: 51%;
     height: 100px;
     margin-top: 10px;
 }
 .redes-sociales {
-    height: 120px;
+    height: 100px;
     padding: 0;
     margin: 0;
     display: flex;
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
-}
-.compartir-redes {
-    width: 20%;
-    height: 58%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    display: block;
-    padding-top: 10px;
 }
 .redes-sociales img {
     width: 78%;
@@ -281,6 +288,16 @@ body {
     .redes-sociales img {
         width: 100%;
     }
+}
+.compartir-redes {
+    width: 20%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    padding-top: 10px;
 }
 .redes-sociales img:hover {
     -webkit-filter: none;
